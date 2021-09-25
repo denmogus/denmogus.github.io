@@ -1,5 +1,7 @@
 *, *:after, *:before {
-    transition: .5s ease-in-out;
+    transition: .75s ease-in-out;
+    -webkit-transition: .75s ease-in-out;
+    -moz-transition: .75s ease-in-out;
 }
 
 #bg {
@@ -13,29 +15,46 @@
     height: 100%;
 }
 #img_cont {
-    width: 500px;
+    /*background-image: url("/assets/denmogus.png");*/
+    /*background-size: contain;*/
+    height: 75vh;
     position: absolute;
-    top: 100px;
-    margin: auto;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    /*margin: auto;*/
+    /*left: 0;*/
+    /*right: 0;*/
 }
 
-#img {
+.img {
     width: inherit;
+    height: inherit;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.top {
+    z-index: 9000;
 }
 
 #stripe {
     position: absolute;
     margin: auto;
-    top: 200px;
+    top: 400px;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color: rgba(0,100,0,0.5);
     z-index: 10;
     text-align: center;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: Rotonda, sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
 }

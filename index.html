@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Найди денмогуса!</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/rotonda.css" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
     <script src="/js/game.js" type="text/javascript"></script>
 </head>
 <body>
@@ -14,7 +15,15 @@
         <p>Кликни на эту зелёную полосу, чтобы начать.</p>
     </div>
     <div id="img_cont">
-        <img id="img" src="/assets/denmogus.png" alt="Уровень">
+        <img id="img" class="img current" src="/assets/denmogus.png" alt="Уровень">
     </div>
+
+    <audio src="/assets/startgame.ogg" id="start_snd" loop></audio>
+    <audio src="/assets/bg.ogg" id="bg_snd" loop></audio>
+    <audio src="/assets/endgame.ogg" id="end_snd" loop></audio>
+
+    <audio src="/assets/levels/level_1/sound.ogg" id="lvl_snd1"></audio>
+    <audio src="/assets/levels/level_2/sound.ogg" id="lvl_snd2"></audio>
+    <audio src="/assets/levels/level_3/sound.ogg" id="lvl_snd3"></audio>
 </body>
 </html>
