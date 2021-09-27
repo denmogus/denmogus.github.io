@@ -1,0 +1,3 @@
+User-agent: *
+Host: denmogus.github.io
+Disallow: /
