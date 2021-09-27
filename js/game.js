@@ -86,7 +86,7 @@ function check(event) {
 
 function nextLevel() {
     if (currLevel === 3) {
-        changeText('Фигасе, ты прошёл игру!', 'ну чел, с днём рождения тебя!');
+        changeText('Фигасе, ты прошёл игру!', 'ну чё, с др, абобус))');
         endAudio.play();
         changeImg('/assets/denmogus.png');
         bg.style.backgroundImage = 'url("/assets/raigor.png")';
