@@ -118,6 +118,7 @@ function win() {
 }
 
 window.onload = () => {
+    document.body.style.display = 'block';
     startAudio = document.querySelector('#start_snd');
     bgAudio = document.querySelector('#bg_snd');
     endAudio = document.querySelector('#end_snd');
@@ -125,7 +126,7 @@ window.onload = () => {
     img = document.querySelector('#img');
     bg = document.querySelector('#bg');
     img_cont = document.querySelector('#img_cont');
-    startAudio.play();
+    img.addEventListener('click', () => startAudio.play(), {once: true})
     stripe.addEventListener('click', () => {
         startAudio.pause();
         nextLevel();

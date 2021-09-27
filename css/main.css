@@ -4,6 +4,8 @@
     -moz-transition: .75s ease-in-out;
 }
 
+body {display: none;}
+
 #bg {
     background-image: url("/assets/lessgo.png");
     background-size: cover;
